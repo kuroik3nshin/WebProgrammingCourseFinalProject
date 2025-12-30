@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenMart - About</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">GreenMart</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" id="weather-widget" class="weather-widget-link">
+                    <span id="weather-icon">☀️</span> <span id="weather-temp">--°C</span>
+                </a>
+                <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+                <a href="login.html" class="user-icon"> Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <div class="container about-container">
+        <h1 class="text-primary mb-1">About</h1>
+        <p class="about-text">
+            GreenMart was born from our passion for nature and sustainable living. Our aim is to offer aesthetically pleasing and ecologically responsible products for your homes.
+            The selected piece represents the perfect blend of craftsmanship and natural materials.
+        </p>
+        <p class="about-text">
+            With our wide range of products, from natural plants to handcrafted decorative objects, we aim to make your living spaces more peaceful and green.
+        </p>
+
+        <h2 class="text-primary mt-2 mb-1">Contact</h2>
+        <ul class="contact-list">
+            <li class="contact-item">📍 <strong>Adress:</strong> Menemen, Izmir</li>
+            <li class="contact-item">📧 <strong>E-mail:</strong> 221005034@bakircay.edu.tr</li>
+            <li class="contact-item">📞 <strong>Tel. Number:</strong> 0212 123 45 67</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 GreenMart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        window.onload = function () {
+            if (typeof updateCartCount === 'function') {
+                updateCartCount();
+            }
+        };
+    </script>
+</body>
+
+
+</html>
+

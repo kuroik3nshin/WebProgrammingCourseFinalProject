@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenMart - Natural Life</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">GreenMart</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" id="weather-widget" class="weather-widget-link">
+                    <span id="weather-icon">☀️</span> <span id="weather-temp">--°C</span>
+                </a>
+                <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+                <a href="login.html" class="user-icon">Login</a>
+            </div>
+        </div>
+    </nav>
+
+   
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Natural Life, Natural Home</h1>
+            <p>Sustainable, eco-friendly, and aesthetically pleasing products for your home.</p>
+            <a href="shop.html" class="btn btn-primary">Discover</a>
+        </div>
+    </header>
+
+    
+    <section class="container">
+        <h2 class="section-title">New Arrivals</h2>
+        <div class="grid-products">
+            
+            <div class="product-card">
+                <div class="product-image"><img src="monstera.png"></div>
+                <div class="product-info">
+                    <div class="product-category">Plant</div>
+                    <h3 class="product-title">Monstera Deliciosa</h3>
+                    <div class="product-price">450.00 TL</div>
+                    <button class="btn btn-outline add-btn" data-name="Monstera Deliciosa" data-price="450">Add to
+                        Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image"><img src="vazoel.jpg"></div>
+                <div class="product-info">
+                    <div class="product-category">Decor</div>
+                    <h3 class="product-title">Handmade Ceramic Vase</h3>
+                    <div class="product-price">320.00 TL</div>
+                    <button class="btn btn-outline add-btn" data-name="Seramik Vazo" data-price="320">Add to
+                        Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image"><img src="sehpa.jpg"></div>
+                <div class="product-info">
+                    <div class="product-category">Furniture</div>
+                    <h3 class="product-title">Wooden Side Table</h3>
+                    <div class="product-price">850.00 TL</div>
+                    <button class="btn btn-outline add-btn" data-name="Ahşap Sehpa" data-price="850">Add to
+                        Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section class="features-section">
+        <div class="container features-container">
+            <div class="feature-column">
+                <div class="feature-icon">🌿</div>
+                <h3 class="feature-title">100% Sustainable</h3>
+                <p class="feature-text">Made with eco-friendly materials.</p>
+            </div>
+            <div class="feature-column">
+                <div class="feature-icon">📦</div>
+                <h3 class="feature-title">Free Shipping</h3>
+                <p class="feature-text">Free shipping on orders over 500 TL.</p>
+            </div>
+            <div class="feature-column">
+                <div class="feature-icon">✨</div>
+                <h3 class="feature-title">Handmade</h3>
+                <p class="feature-text">Each product is carefully handcrafted.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy;  2026 GreenMart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
